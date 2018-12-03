@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'UCSIM_Example' do
+  pod 'UCSIM', :path => '../'
+
+  target 'UCSIM_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
