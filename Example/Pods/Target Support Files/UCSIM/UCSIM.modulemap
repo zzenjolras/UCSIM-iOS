@@ -1,0 +1,6 @@
+framework module UCSIM {
+  umbrella header "UCSIM-umbrella.h"
+
+  export *
+  module * { export * }
+}

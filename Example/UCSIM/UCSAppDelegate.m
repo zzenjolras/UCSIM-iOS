@@ -7,12 +7,25 @@
 //
 
 #import "UCSAppDelegate.h"
+//#import "UCSIMSDK.h"
+//#import "UCSTCPSDK.h"
+//#import <UCSIM/UCSTCPSDK.h>
+//#import "AliyunOSSiOS.h"
+#import "UCSIMSDK.h"
+#import "UCSTCPSDK.h"
+
 
 @implementation UCSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
+    [[UCSTcpClient sharedTcpClientManager] login_connect:@"token" success:^(NSString *userId) {
+        
+    } failure:^(UCSError *error) {
+        
+    }];
+    
     return YES;
 }
 
