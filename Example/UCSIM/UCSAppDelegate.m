@@ -7,13 +7,19 @@
 //
 
 #import "UCSAppDelegate.h"
-//#import "UCSIMSDK.h"
-//#import "UCSTCPSDK.h"
-//#import <UCSIM/UCSTCPSDK.h>
-//#import "AliyunOSSiOS.h"
-#import "UCSIMSDK.h"
-#import "UCSTCPSDK.h"
 
+// im
+#import "UCSIMSDK.h"
+// tcp
+#import "UCSTCPSDK.h"
+// voip
+#import "UCSCommonClass.h"
+#import "UCSService.h"
+#import "UCSEvent.h"
+
+@interface UCSAppDelegate() <UCSEventDelegate>
+
+@end
 
 @implementation UCSAppDelegate
 
@@ -26,7 +32,13 @@
         
     }];
     
+    UCSService *ucsService = [[UCSService alloc] initWithDelegate:self];
+    
     return YES;
+}
+
+- (void)onInitEngineSuccessful:(NSInteger)result {
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

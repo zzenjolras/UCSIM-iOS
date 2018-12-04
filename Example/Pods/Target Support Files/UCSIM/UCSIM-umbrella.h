@@ -34,6 +34,10 @@
 #import "UCSTcpDefine.h"
 #import "UCSTCPDelegateBase.h"
 #import "UCSTCPSDK.h"
+#import "UCSCommonClass.h"
+#import "UCSEvent.h"
+#import "UCSService.h"
+#import "UCSVideoDefine.h"
 
 FOUNDATION_EXPORT double UCSIMVersionNumber;
 FOUNDATION_EXPORT const unsigned char UCSIMVersionString[];

@@ -41,9 +41,11 @@ TODO: Add long description of the pod here.
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
   s.xcconfig = { 'ENABLE_BITCODE' => 'No' }
   
-   s.frameworks = 'UIKit', 'SystemConfiguration', 'AVFoundation', 'CoreMedia'
+   s.frameworks = 'UIKit', 'SystemConfiguration', 'AVFoundation', 'CoreMedia', 'Foundation', 'MessageUI', 'CoreFoundation', 'MobileCoreServices', 'CFNetwork', 'AudioToolbox', 'AddressBookUI', 'AssetsLibrary', 'CoreAudio', 'VideoToolbox', 'CoreTelephony'
 
-   s.libraries = 'c++', 'z.1.1.3', 'sqlite3.0', 'icucore'
-   s.vendored_libraries = 'UCSIM/Classes/UCS_IMSDK/libucsimlib.a', 'UCSIM/Classes/UCS_TCPSDK/libucstcplib.a'
+   s.libraries = 'c++', 'z.1.1.3', 'sqlite3.0', 'icucore', 'resolv'
+   
+   s.vendored_libraries = 'UCSIM/Classes/UCS_IMSDK/libucsimlib.a', 'UCSIM/Classes/UCS_TCPSDK/libucstcplib.a', 'UCSIM/Classes/UCS_VOIPSDK/libucsvideosdk.a'
+   
    s.dependency 'AliyunOSSiOS'
 end
