@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UCSIM'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'UCSIM - iOS SDK'
 
 # This description is used to generate tags and improve search results.
@@ -43,7 +43,7 @@ TODO: Add long description of the pod here.
   
    s.frameworks = 'UIKit', 'SystemConfiguration', 'AVFoundation', 'CoreMedia', 'Foundation', 'MessageUI', 'CoreFoundation', 'MobileCoreServices', 'CFNetwork', 'AudioToolbox', 'AddressBookUI', 'AssetsLibrary', 'CoreAudio', 'VideoToolbox', 'CoreTelephony'
 
-   s.libraries = 'c++', 'z.1.1.3', 'sqlite3.0', 'icucore', 'resolv'
+   s.libraries = 'stdc++', 'stdc++.6', 'z.1.1.3', 'sqlite3.0', 'icucore', 'resolv'
    
    s.vendored_libraries = 'UCSIM/Classes/UCS_IMSDK/libucsimlib.a', 'UCSIM/Classes/UCS_TCPSDK/libucstcplib.a', 'UCSIM/Classes/UCS_VOIPSDK/libucsvideosdk.a'
    
