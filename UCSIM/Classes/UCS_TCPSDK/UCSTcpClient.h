@@ -57,7 +57,8 @@
  *
  *  @param token VoipService推送需要的token
  */
-- (void)setVoipServiceToken:(NSData *)token;
+- (void)setVoipServiceToken:(UCSPushEnvironment)environment
+                token:(NSData *)token;
 
 
 
